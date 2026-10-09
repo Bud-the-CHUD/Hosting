@@ -1,0 +1,184 @@
+
+/*--------------------------------------------*/
+/* CSS Color Variables                        */
+/*--------------------------------------------*/
+:host {
+    --root-text-color: #565656;
+    --root-font-size: 14px;
+    --root-line-height: 24px;
+    --primary: #D6CAA6;
+    --secondary: #88a0af;
+    --form-field-bgcolor: #f9f9f9;
+    --form-field-border: #b4c5cf;
+    --form-field-border--active: #D6CAA6;
+    --form-valid: #42bc34;
+    --form-invalid: #dc3545;
+    --form-btn-primary-text: #fff;
+    --form-btn-primary-bgcolor: var(--primary);
+    --form-btn-primary-hover: #0a2f44;
+    --form-btn-primary-active: #4f0a1b;
+    --form-btn-secondary-text: #384249;
+    --form-btn-secondary-bgcolor: #fff;
+    --form-btn-secondary-hover: #f6f7f9;
+    --form-btn-secondary-active: #ededed;
+    --form-btn-disabled: #657783;
+    --card-bgcolor: #fff;
+    --card-title-color: #696969;
+    --card-header-bgcolor: #6c757d;
+    --box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+    --progress-pledged: #1b88b0;
+    --progress-received: #000;
+    --root-font-face: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+/*--------------------------------------------*/
+/* Card                                       */
+/*--------------------------------------------*/
+:host {
+    --card-textColor: #384249;
+    --card-borderRadius: 4px;
+    --card-boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+    --card-primaryColor: #D6CAA6;
+    --card-badgeBgColor: var(--card-textColor);
+    --card-headerBgColor: #666;
+    --card-badgeStatusActiveColor: var(--card-primaryColor);
+    --card-badgeStatusPendingColor: #f0d030;
+    --card-badgeStatusDiscontinuedColor: #ededed;
+    --card-badgeStatusCompleteColor: #77be43;
+    --card-fontSize: 14px;
+    --card-fontSizeHeader: 18px;
+    --card-lineHeight: 24px;
+    --card-progressBarColor: #1b88b0;
+    --card-progressBarActiveColor: linear-gradient(90deg, #1b88b0 0%, #1fb5ac 100%);
+    --card-progressBarRemainingColor: #efefef;
+    --card-progressBarCompleteColor: #77be43;
+    --card-imageBgColor: #657783;
+    --card-checkboxDefaultColor: #657783;
+    --card-labelBgColor: #efefef;
+}
+
+/*--------------------------------------------*/
+/* Form                                       */
+/*--------------------------------------------*/
+:host {
+    --form-field-color: #657783;
+    --form-field-fontFamily: var(--root-font-face);
+    --form-field-margin: 8px;
+    --form-field-borderradius: 4px;
+    --form-field-padding: 20px 13px;
+    --form-field-bgcolor: #f9f9f9;
+    --form-field-bgcolor--active: #f6f7f9;
+    --form-field-border: #000;
+    --form-field-border--active: rgb(0, 0, 0);
+    --form-field-boxshadow--active: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+    --form-field-boxshadow--valid: 0 0 0 0.2rem rgba(40, 167, 69, .25);
+    --form-field-boxshadow--invalid: 0 0 0 0.2rem rgba(220, 53, 69, .25);
+    --form-valid: #28a745;
+    --form-invalid: #dc3545;
+    --form-field-disabled: #ebebe4;
+}
+
+/*--------------------------------------------*/
+/* Inner Page Details                         */
+/*--------------------------------------------*/
+:host {
+    --innerPage-bgColor: #657783;
+    --innerPage-textColor: #384249;
+    --innerPage-fontSize: 18px;
+    --innerPage-lineHeight: 34px;
+    --innerPage-primaryColor: #D6CAA6;
+    --innerPage-boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
+    --innerPage-borderRadius: 4px;
+    /* headers */
+    --innerPage-h1fontSize: 45px;
+    --innerPage-h1lineHeight: 60px;
+    --innerPage-h2fontSize: 24px;
+    --innerPage-h2lineHeight: 34px;
+    --innerPage-h3fontSize: 20px;
+    --innerPage-h3lineHeight: 28px;
+    --innerPage-h3color: #657783;
+    --innerPage-h4fontSize: 18px;
+    --innerPage-h4lineHeight: 24px;
+    --innerPage-dateTimeFontSize: 28px;
+    --innerPage-buttonBgColor: var(--innerPage-primaryColor);
+    --innerPage-buttonHoverBgColor: var(--form-btn-primary-hover);
+    --innerPage-buttonActiveBgColor: var(--form-btn-primary-bgcolor);
+    --innerPage-progressBarColor: var(--card-progressBarColor);
+    --innerPage-progressBarActiveColor: var(--card-progressBarActiveColor);
+    --innerPage-progressBarRemainingColor: var(--card-progressBarRemainingColor);
+    --innerPage-progressBarCompleteColor: var(--card-progressBarCompleteColor);
+    --innerPage-labelBgColor: #efefef;
+    --innerPage-linkColor: #D6CAA6;
+    --innerPage-linkHoverColor: #4684ca;
+    --innerPage-linkActiveColor: #4273aa;
+    --innerPage-imageBgColor: #657783;
+    --innerPage-mapBgColor: #efefef;
+}
+
+/*--------------------------------------------*/
+/* Login                                      */
+/*--------------------------------------------*/
+:host {
+    --component-bgColor: #657783;
+}
+
+/*--------------------------------------------*/
+/* COMPONENT CONTAINER                        */
+/*--------------------------------------------*/
+.mppw-component-container {
+    font-family: var(--root-font-face);
+    color: var(--root-text-color);
+    line-height: initial;
+}
+
+/*--------------------------------------------*/
+/* Wildcard Font CSS                          */
+/*--------------------------------------------*/
+* {
+    box-sizing: border-box;
+    font-family: var(--root-font-face);
+}
+
+/*--------------------------------------------*/
+/* Custom Card Builder classes                */
+/*--------------------------------------------*/
+.mpp-card--title {
+}
+
+/* Groups cards */
+.mpp-card--subtitle.group-location {
+}
+
+.mpp-card--subtitle.group-meeting-day {
+}
+
+.mpp-card--subtitle.group-start-date {
+}
+
+/* Invoice cards */
+.mpp-card--subtitle.invoice-status {
+}
+
+.mpp-card--subtitle.invoice-total {
+}
+
+.mpp-card--subtitle.invoice-date {
+}
+
+/* Opportunity cards */
+.mpp-card--subtitle.opportunity-location {
+}
+
+.mpp-card--subtitle.opportunity-start-date {
+}
+
+/* Event cards */
+.mpp-card--subtitle.event-date-range {
+}
+
+.mpp-card--subtitle.event-location {
+}
+
+.mpp-card--description {
+}
