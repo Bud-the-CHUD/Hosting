@@ -1,0 +1,8 @@
+## Interface: 120000
+## Title: BuffNudge
+## Notes: On a ready check, tells raid members which of their raid buffs you are missing.
+## Author: Bud-the-CHUD
+## Version: 0.1.0
+## SavedVariables: BuffNudgeDB
+
+BuffNudge.lua
